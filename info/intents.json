@@ -1,0 +1,7 @@
+{
+  "greet": "utter_greet",
+  "proceso_scrum": "utter_proceso_scrum",
+  "product_backlog": "utter_product_backlog",
+  "product_owner": "utter_product_owner", 
+  "epica": "utter_epica"
+}
