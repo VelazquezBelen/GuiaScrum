@@ -13,4 +13,6 @@ class Explanation:
     @property
     def next_detail_level(self):
         self._detail_level += 1
-        return self._name[self._detail_level]
+        if self._detail_level >= len(self._name): 
+            return self._name[len(self._name)-1]
+        else: return self._name[self._detail_level]

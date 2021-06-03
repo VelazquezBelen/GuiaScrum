@@ -37,13 +37,11 @@ class BasicIterator(Iterator):
         # explanation to give.
         self._intents = intents
         keys = list(self._intents.keys())
-        for i in range(0,len(self._intents)):
+        for i in range(0,len(keys)):
             self._explanations[keys[i]] = explanations[i]
             self._explain_order.append(explanations[i])       
 
     def next(self) -> str:
-        if self._current_pos == 0: 
-            self._current_pos += 1
         if self._current_pos == len(self._explain_order): # The tour ended
             return 'utter_goodbye'
         explanation = self._explain_order[self._current_pos]
@@ -52,9 +50,9 @@ class BasicIterator(Iterator):
         return explanation.name
 
     def get(self, intent_name: str) -> str:
-        explanation = self._explanations[intent_name]
+        explanation = self._intents[intent_name]
         self._last_explanation = explanation
-        return explanation.name
+        return explanation
 
     def re_explain(self) -> str:
         # Explain with one more level of detail.

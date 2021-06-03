@@ -1,7 +1,18 @@
 {
-  "greet": "utter_greet",
   "proceso_scrum": "utter_proceso_scrum",
   "product_backlog": "utter_product_backlog",
   "product_owner": "utter_product_owner", 
-  "epica": "utter_epica"
+  "epica": "utter_epica",
+  "scrum_master": "utter_scrum_master",
+  "sprint_backlog": "utter_sprint_backlog",
+  "disenio_backlog": "utter_disenio_backlog",
+  "user_story": "utter_user_story",
+  "tarea": "utter_tarea",
+  "development_team": "utter_development_team",
+  "daily_meeting": "utter_daily_meeting",
+  "scrum_board": "utter_scrum_board",
+  "sprint_review": "utter_sprint_review",
+  "increment": "utter_increment",
+  "burndown_chart": "utter_burndown_chart",
+  "sprint_retrospective": "utter_sprint_retrospective"
 }

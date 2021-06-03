@@ -274,18 +274,16 @@ nlu:
 
   - intent: sprint_retrospective
     examples: |
-      - que es el [sprint retrospective]{"entity":"etapa","value":"retrospective"}?
-      - para que es el [sprint retrospective]{"entity":"etapa","value":"retrospective"}?
-      - para que se hace el [sprint retrospective]{"entity":"etapa","value":"retrospective"}?
-      - para que sirve el [sprint retrospective]{"entity":"etapa","value":"retrospective"}?
-      - para que sirve hacer una [retrospectiva]{"entity":"etapa","value":"retrospective"} al final del sprint?
-      - me das mas información sobre el [sprint retrospective]{"entity":"etapa","value":"retrospective"}?
-      - me das mas detalles sobre el [sprint retrospective]{"entity":"etapa","value":"retrospective"}?
-      - no entendi bien el [sprint retrospective]{"entity":"etapa","value":"retrospective"}
-      - no entendi que es el [sprint retrospective]{"entity":"etapa","value":"retrospective"}
-      - me podes repetir lo que es el [sprint retrospective]{"entity":"etapa","value":"retrospective"}?
-
-
+      - que es el sprint retrospective?
+      - para que es el sprint retrospective?
+      - para que se hace el sprint retrospective?
+      - para que sirve el sprint retrospective?
+      - para que sirve hacer una retrospectiva al final del sprint?
+      - me das mas información sobre el sprint retrospective?
+      - me das mas detalles sobre el sprint retrospective?
+      - no entendi bien el sprint retrospective
+      - no entendi que es el sprint retrospective
+      - me podes repetir lo que es el sprint retrospective?
 
 
 #  # Otros

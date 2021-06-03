@@ -16,7 +16,6 @@ from tour.explanation import Explanation
 def parse_raw_explanation(data: Dict[str, Any]) -> Explanation:
     return Explanation(list(data["name"]))
 
-
 def _create_iterator(path_explanations: str, path_intents: str
                      ) -> iterator.Iterator:
     with open(path_explanations) as file:
@@ -63,6 +62,10 @@ class TourPolicy(Policy):
         # If the last thing rasa did was listen to a user message, we need to
         # send back a response.
         if tracker.latest_action_name == "action_listen":
+            # The user starts the conversation
+            if intent["name"] == "greet":
+                return self._prediction(confidence_scores_for('utter_greet', 1.0, domain))
+
             # The user wants to continue with next explanation.
             if intent["name"] == "affirm":
                 return self._prediction(confidence_scores_for(

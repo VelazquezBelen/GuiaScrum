@@ -1,7 +1,4 @@
-[
-  {
-    "name": ["utter_greet"]
-  },
+[ 
   {
     "name": ["utter_proceso_scrum", "utter_proceso_scrum_2"]
   },
@@ -13,5 +10,41 @@
   },
   {
     "name": ["utter_epica", "utter_epica_2"]
+  },
+  {
+    "name": ["utter_scrum_master", "utter_scrum_master_2"]
+  },
+  {
+    "name": ["utter_sprint_backlog", "utter_sprint_backlog_2"]
+  },
+  {
+    "name": ["utter_disenio_backlog", "utter_disenio_backlog_2"]
+  },
+  {
+    "name": ["utter_user_story", "utter_user_story_2"]
+  },
+  {
+    "name": ["utter_tarea", "utter_tarea_2"]
+  },
+  {
+    "name": ["utter_development_team", "utter_development_team_2"]
+  },
+  {
+    "name": ["utter_daily_meeting", "utter_daily_meeting_2"]
+  },
+  {
+    "name": ["utter_scrum_board", "utter_scrum_board_2"]
+  },
+  {
+    "name": ["utter_sprint_review", "utter_sprint_review_2"]
+  },
+  {
+    "name": ["utter_increment", "utter_increment_2"]
+  },
+  {
+    "name": ["utter_burndown_chart", "utter_burndown_chart_2"]
+  },
+  {
+    "name": ["utter_sprint_retrospective", "utter_sprint_retrospective_2"]
   }
 ]
