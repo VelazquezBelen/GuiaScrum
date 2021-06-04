@@ -62,10 +62,10 @@ class TourPolicy(Policy):
         # If the last thing rasa did was listen to a user message, we need to
         # send back a response.
         if tracker.latest_action_name == "action_listen":
-            # The user starts the conversation
+            # The user starts the conversation.
             if intent["name"] == "greet":
-                return self._prediction(confidence_scores_for('utter_greet', 1.0, domain))
-
+                return self._prediction(confidence_scores_for('utter_greet', 1.0, domain
+                ))
             # The user wants to continue with next explanation.
             if intent["name"] == "affirm":
                 return self._prediction(confidence_scores_for(
