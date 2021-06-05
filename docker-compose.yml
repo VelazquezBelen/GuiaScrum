@@ -4,7 +4,7 @@ services:
   
   rasa:
     build: .
-    image: rasa-scrumtalk:latest
+    image: rasa-scrumtalk:2.4.3
     ports:
       - 5005:5005
     volumes:
@@ -21,13 +21,13 @@ services:
 
   action-server:
     build: actions
-    image: rasa-scrumtalk-actions:latest
+    image: rasa-scrumtalk-actions:2.4.1
     ports:
       - 5055:5055
     volumes:
       - ./actions:/app/actions
     command:
-      - python3
+      - python
       - -m
       - rasa_sdk
       - --actions
