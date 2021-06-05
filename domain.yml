@@ -376,7 +376,7 @@ responses:
     de usuario y cualquier elemento que se haya
     desarrollado durante el Sprint y que será puesto a disposición del usuario
     final en forma de software, aportando un valor de negocio al producto que
-    se está desarrollando."         #################### HAY UN INCREMENT PARA VER  ??#########################
+    se está desarrollando."             #################### HAY UN INCREMENT PARA VER ?? #########################
 
   utter_burndown_chart:
     - text: "Burdown Chart es un gráfico de trabajo pendiente a lo largo del tiempo que 
@@ -387,7 +387,7 @@ responses:
     - text: "es una representación gráfica del trabajo por hacer en un proyecto en el 
     tiempo. Usualmente el trabajo remanente (o backlog) se muestra en el eje vertical 
     y el tiempo en el eje horizontal. Este diagrama es útil para predecir cuándo se 
-    completará todo el trabajo."        #################### HAY UN BURNDOWN PARA VER  ??#########################
+    completará todo el trabajo."        #################### HAY UN BURNDOWN PARA VER ?? #########################
 
   utter_sprint_retrospective:
     - text: "La retrospectiva ocurre al final del Sprint, justo después del

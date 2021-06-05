@@ -28,9 +28,9 @@ nlu:
       - chau
       - hasta la próxima
       - bye
-      - gracias por la explicación chau
+      - gracias por el tour
       - gracias adios
-      - gracias ya entendi, chau
+      - gracias 
 
   - intent: affirm
     examples: |
@@ -63,6 +63,12 @@ nlu:
       - repeti el tema
       - no comprendo
       - explicame eso devuelta
+      - me podes explicar eso devuelta
+      - me volves a explicar?
+      - no entendi ese tema
+      - no entiendo lo que acabas de explicar
+      - necesito que me vuelvas a explicar eso
+      - por favor me das mas detalles de eso
 
   # ---Introduccion---
 
