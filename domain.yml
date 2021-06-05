@@ -256,7 +256,7 @@ responses:
     Por ejemplo, las historias de usuario pueden tener este aspecto: Como gestor, quiero 
     poder comprender el progreso de mis compañeros, para poder informar sobre nuestros 
     éxitos y fallos. Esta estructura no es obligatoria, pero resulta de ayuda 
-    para establecer una definición de "hecho". Cuando ese perfil puede alcanzar su valor 
+    para establecer una definición de Done. Cuando ese perfil puede alcanzar su valor 
     deseado, la historia está completa."
 
   utter_tarea:
@@ -312,7 +312,7 @@ responses:
     auto-organización del equipo."
 
   utter_scrum_board:
-    - text: El Scrum Board un artefacto que permite organizar la gestión de un proyecto.
+    - text: "El Scrum Board un artefacto que permite organizar la gestión de un proyecto.
     Cuenta con columnas que indican el estado de cada tarea y sirve para:\n
     Dividir el proyecto en fases bien definidas. \n
 
@@ -364,12 +364,6 @@ responses:
     - text: "Un Incremento es el resultado del Sprint, es la suma de todos los ítems del 
     Product Backlog (PBIs) completados durante un Sprint el valor de los incrementos de 
     todos los Sprints pasados. "
-    
-    es la suma de todas las
-    tareas, casos de uso, historias de usuario y cualquier elemento que se haya
-    desarrollado durante el Sprint y que será puesto a disposición del usuario
-    final en forma de software, aportando un valor de negocio al producto que
-    se está desarrollando."
 
   utter_increment_2:
     - text: "Un incremento es es la suma de todas las tareas, casos de uso, historias 
@@ -384,7 +378,7 @@ responses:
     o historias de usuarios."
 
   utter_burndown_chart_2:
-    - text: "es una representación gráfica del trabajo por hacer en un proyecto en el 
+    - text: "Es una representación gráfica del trabajo por hacer en un proyecto en el 
     tiempo. Usualmente el trabajo remanente (o backlog) se muestra en el eje vertical 
     y el tiempo en el eje horizontal. Este diagrama es útil para predecir cuándo se 
     completará todo el trabajo."        #################### HAY UN BURNDOWN PARA VER ?? #########################
