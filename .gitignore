@@ -1,7 +1,0 @@
-#/models
-/.vscode
-/credentials.yml
-/actions/__pycache__
-
-# Pycharm config files.
-/.idea
