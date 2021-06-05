@@ -4,7 +4,7 @@ services:
   
   rasa:
     build: .
-    image: rasa-asistentes:2.4.3rc2
+    image: rasa/rasa:2.4.3rc2
     ports:
       - 5005:5005
     volumes:
@@ -21,7 +21,7 @@ services:
 
   action-server:
     build: actions
-    image: rasa-asistentes-actions:2.4.1
+    image: rasa/rasa_sdk:2.4.1
     ports:
       - 5055:5055
     volumes:
