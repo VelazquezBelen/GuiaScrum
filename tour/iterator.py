@@ -43,7 +43,7 @@ class BasicIterator(Iterator):
 
     def next(self) -> str:
         if self._current_pos == len(self._explain_order): # The tour ended
-            return 'utter_goodbye'
+            return 'utter_end_tour'
         explanation = self._explain_order[self._current_pos]
         self._current_pos += 1
         self._last_explanation = explanation
@@ -57,3 +57,6 @@ class BasicIterator(Iterator):
     def re_explain(self) -> str:
         # Explain with one more level of detail.
         return self._last_explanation.next_detail_level
+
+    def reset_tour(self):
+        self._current_pos = 0

@@ -77,9 +77,12 @@ responses:
   utter_greet:
     - text: "¡Hola! Estoy aquí para guiarte en el proceso Scrum. ¿Querés realizar un recorrido?"
 
+  utter_end_tour:
+    - text: "Eso es todo, ante cualquier duda que tengas sobre Scrum ya sabes donde encontrarme."
+
   utter_goodbye:
-    - text: "Eso es todo, ante cualquier duda que tengas sobre Scrum ya sabes donde
-    encontrarme. Adiós!"
+    - text: "Adiós!"
+    - text: "Hasta pronto!"
 
   # ---Introduccion---
 
@@ -91,7 +94,7 @@ responses:
     priorizada del producto, que actúa como plan del proyecto. En esta lista el
     Product Owner prioriza los objetivos balanceando el valor que le aportan
     respecto a su coste y quedan repartidos en iteraciones y entregas.
-    \nQuerés continuar hacia la explicación del Product Backlog?"
+    \nQuerés continuar con la explicación del Product Backlog?"
 
   utter_proceso_scrum_2:
     - text: "Como mencioné antes, Scrum es un marco de trabajo que se ejecuta en Sprints. 
