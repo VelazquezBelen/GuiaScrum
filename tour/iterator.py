@@ -50,9 +50,9 @@ class BasicIterator(Iterator):
         return explanation.name
 
     def get(self, intent_name: str) -> str:
-        explanation = self._intents[intent_name]
+        explanation = self._explanations[intent_name]
         self._last_explanation = explanation
-        return explanation
+        return explanation.name
 
     def re_explain(self) -> str:
         # Explain with one more level of detail.

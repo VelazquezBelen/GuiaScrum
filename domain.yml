@@ -69,7 +69,13 @@ intents:
 
 # slots:
 
-# actions:
+actions:
+  - action_recorrido_1
+  - action_recorrido_2
+  - action_recorrido_3
+  - action_recorrido_4
+  - action_recorrido_5
+  - action_recorrido_6
 
 responses:
   # ---Generales---
