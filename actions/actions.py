@@ -4,107 +4,99 @@
 # See this guide on how to implement these action:
 # https://rasa.com/docs/rasa/custom-actions
 
-from typing import Any, Text, Dict, List
+# from typing import Any, Text, Dict, List
 
-from rasa_sdk import Action, Tracker
-import rasa_sdk
-from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.events import SlotSet
-from actions.event_handling import EventPublisher
+# from rasa_sdk import Action, Tracker
+# import rasa_sdk
+# from rasa_sdk.executor import CollectingDispatcher
+# from rasa_sdk.events import SlotSet
+# from actions.event_handling import EventPublisher
 
-publisher = EventPublisher("log_eventos")
+# publisher = EventPublisher("log_eventos")
 
-class ActionRecorrido1(Action):
+# class ActionRecorrido1(Action):
 
-    def name(self) -> Text:
-        return "action_recorrido_1"
+#     def name(self) -> Text:
+#         return "action_recorrido_1"
 
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
-        publisher.publish("movement",
-                  {"location" : "recorridoAsistenteScrum_punto1",
-                    "to": "Cristina"})
-        return []
+#         publisher.publish("movement",
+#                   {"location" : "recorridoAsistenteScrum_punto1",
+#                     "to": "Cristina"})
+#         return []
 
-class ActionRecorrido2(Action):
+# class ActionRecorrido2(Action):
 
-    def name(self) -> Text:
-        return "action_recorrido_2"
+#     def name(self) -> Text:
+#         return "action_recorrido_2"
 
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
-        publisher.publish("movement",
-                  {"location" : "recorridoAsistenteScrum_punto2",
-                    "to": "Cristina"})
-        return []
+#         publisher.publish("movement",
+#                   {"location" : "recorridoAsistenteScrum_punto2",
+#                     "to": "Cristina"})
+#         return []
 
-class ActionRecorrido3(Action):
+# class ActionRecorrido3(Action):
 
-    def name(self) -> Text:
-        return "action_recorrido_3"
+#     def name(self) -> Text:
+#         return "action_recorrido_3"
 
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
-        publisher.publish("movement",
-                  {"location" : "recorridoAsistenteScrum_punto3",
-                    "to": "Cristina"})
-        return []
+#         publisher.publish("movement",
+#                   {"location" : "recorridoAsistenteScrum_punto3",
+#                     "to": "Cristina"})
+#         return []
 
-class ActionRecorrido4(Action):
+# class ActionRecorrido4(Action):
 
-    def name(self) -> Text:
-        return "action_recorrido_4"
+#     def name(self) -> Text:
+#         return "action_recorrido_4"
 
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
-        publisher.publish("movement",
-                  {"location" : "recorridoAsistenteScrum_punto4",
-                    "to": "Cristina"})
-        return []
+#         publisher.publish("movement",
+#                   {"location" : "recorridoAsistenteScrum_punto4",
+#                     "to": "Cristina"})
+#         return []
 
-class ActionRecorrido5(Action):
+# class ActionRecorrido5(Action):
 
-    def name(self) -> Text:
-        return "action_recorrido_5"
+#     def name(self) -> Text:
+#         return "action_recorrido_5"
 
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
-        publisher.publish("movement",
-                  {"location" : "recorridoAsistenteScrum_punto5",
-                    "to": "Cristina"})
-        return []
+#         publisher.publish("movement",
+#                   {"location" : "recorridoAsistenteScrum_punto5",
+#                     "to": "Cristina"})
+#         return []
 
-class ActionRecorrido6(Action):
+# class ActionRecorrido6(Action):
 
-    def name(self) -> Text:
-        return "action_recorrido_6"
+#     def name(self) -> Text:
+#         return "action_recorrido_6"
 
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
-        publisher.publish("movement",
-                  {"location" : "recorridoAsistenteScrum_punto6",
-                    "to": "Cristina"})
-        return []
-
-
-
-
-
-
-
-
+#         publisher.publish("movement",
+#                   {"location" : "recorridoAsistenteScrum_punto6",
+#                     "to": "Cristina"})
+#         return []
 
 # class ActionTrabajoScrumMaster(Action):
 

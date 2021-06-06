@@ -43,6 +43,16 @@ nlu:
       - está bien
       - entendido
       - enterado
+      - continua
+      - avanza hacia el siguiente tema
+      - ok
+      - si entendi
+      - si me parece bien
+      - avanza
+      - continua con la explicación
+      - avanza con lo que sigue
+      - sigamos el recorrido
+      - segui
 
   - intent: deny
     examples: |
@@ -69,6 +79,7 @@ nlu:
       - no entiendo lo que acabas de explicar
       - necesito que me vuelvas a explicar eso
       - por favor me das mas detalles de eso
+      - necesito un ejemplo para entenderlo
 
   # ---Introduccion---
 
