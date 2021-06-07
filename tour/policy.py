@@ -52,6 +52,10 @@ def move_to_a_location(response):
                 publisher.publish("movement",
                 {"location" : "tour_scrum_assistant_p6",
                 "to": "Cristina"})
+    if response == "utter_sprint_review":
+                publisher.publish("movement",
+                {"location" : "tour_scrum_assistant_p6",
+                "to": "Cristina"})    
 
 class TourPolicy(Policy):
 
