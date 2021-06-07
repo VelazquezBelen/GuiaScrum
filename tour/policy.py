@@ -13,7 +13,7 @@ from tour import iterator
 from tour.explanation import Explanation
 from tour.event_handling import EventPublisher
 
-publisher = EventPublisher("log_eventos")
+publisher = EventPublisher("movimiento")
 
 def parse_raw_explanation(data: Dict[str, Any]) -> Explanation:
     return Explanation(list(data["name"]))
@@ -26,36 +26,22 @@ def _create_iterator(path_explanations: str, path_intents: str
         intents = json.load(file)
     return iterator.BasicIterator(explanations, intents)
 
-
 def move_to_a_location(response):
-    if response == "utter_greet":
+    locations = {
+        "utter_start_tour" : "tour_scrum_assistant_p1",
+        "utter_product_backlog" : "tour_scrum_assistant_p2",
+        "utter_sprint_backlog": "tour_scrum_assistant_p2",
+        "utter_scrum_master" : "tour_scrum_assistant_p3",
+        "utter_scrum_board" : "tour_scrum_assistant_p4",
+        "utter_development_team" : "tour_scrum_assistant_p5",
+        "utter_daily_meeting" : "tour_scrum_assistant_p6",
+        "utter_sprint_review" : "tour_scrum_assistant_p6"
+    }
+    if locations.get(response) != None:
         publisher.publish("movement",
-            {"location" : "tour_scrum_assistant_p1",          
-                "to": "Cristina"})
-    if response == "utter_product_backlog" or response == "utter_sprint_backlog":
-        publisher.publish("movement",
-                    {"location" : "tour_scrum_assistant_p2",
-                    "to": "Cristina"})
-    if response == "utter_scrum_master":
-        publisher.publish("movement",
-                {"location" : "tour_scrum_assistant_p3",
-                "to": "Cristina"})
-    if response == "utter_scrum_board":
-        publisher.publish("movement",
-                {"location" : "tour_scrum_assistant_p4",
-                "to": "Cristina"})
-    if response == "utter_development_team":
-        publisher.publish("movement",
-                {"location" : "tour_scrum_assistant_p5",
-                "to": "Cristina"})
-    if response == "utter_daily_meeting":
-                publisher.publish("movement",
-                {"location" : "tour_scrum_assistant_p6",
-                "to": "Cristina"})
-    if response == "utter_sprint_review":
-                publisher.publish("movement",
-                {"location" : "tour_scrum_assistant_p6",
-                "to": "Cristina"})    
+            {"location" : locations.get(response),
+             "to": "Cristina"})  
+
 
 class TourPolicy(Policy):
 
