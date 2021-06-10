@@ -10,36 +10,18 @@
 # import rasa_sdk
 # from rasa_sdk.executor import CollectingDispatcher
 # from rasa_sdk.events import SlotSet
-# from actions.event_handling import EventPublisher
 
-# publisher = EventPublisher("log_eventos")
-
-# class ActionRecorrido1(Action):
-
-#     def name(self) -> Text:
-#         return "action_recorrido_1"
-
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        
-#         publisher.publish("movement",
-#                   {"location" : "recorridoAsistenteScrum_punto1",
-#                     "to": "Cristina"})
-#         return []
 
 # class ActionRecorrido2(Action):
 
 #     def name(self) -> Text:
-#         return "action_recorrido_2"
+#         return "action_greet"
 
 #     def run(self, dispatcher: CollectingDispatcher,
 #             tracker: Tracker,
 #             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
-#         publisher.publish("movement",
-#                   {"location" : "recorridoAsistenteScrum_punto2",
-#                     "to": "Cristina"})
+#         dispatcher.utter_message('action greet')
 #         return []
 
 # class ActionRecorrido3(Action):

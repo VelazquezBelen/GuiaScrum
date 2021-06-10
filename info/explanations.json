@@ -6,6 +6,9 @@
     "name": ["utter_proceso_scrum", "utter_proceso_scrum_2"]
   },
   {
+    "name": ["utter_move_to_sala_planning"]
+  },
+  {
     "name": ["utter_product_backlog", "utter_product_backlog_2"]
   },
   {
@@ -15,7 +18,16 @@
     "name": ["utter_epica", "utter_epica_2"]
   },
   {
+    "name": ["utter_sprint_planning", "utter_sprint_planning_2"]
+  },
+  {
+    "name": ["utter_move_to_oficina"]
+  },
+  {
     "name": ["utter_scrum_master", "utter_scrum_master_2"]
+  },
+  {
+    "name": ["utter_move_to_sala_planning"]
   },
   {
     "name": ["utter_sprint_backlog", "utter_sprint_backlog_2"]
@@ -30,13 +42,25 @@
     "name": ["utter_tarea", "utter_tarea_2"]
   },
   {
+    "name": ["utter_move_to_sala_development"]
+  },
+  {
     "name": ["utter_development_team", "utter_development_team_2"]
+  },
+  {
+    "name": ["utter_move_to_sala_reuniones"]
   },
   {
     "name": ["utter_daily_meeting", "utter_daily_meeting_2"]
   },
   {
+    "name": ["utter_move_to_tablero"]
+  },
+  {
     "name": ["utter_scrum_board", "utter_scrum_board_2"]
+  },
+  {
+    "name": ["utter_move_to_sala_reuniones"]
   },
   {
     "name": ["utter_sprint_review", "utter_sprint_review_2"]

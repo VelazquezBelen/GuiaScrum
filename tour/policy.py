@@ -29,13 +29,11 @@ def _create_iterator(path_explanations: str, path_intents: str
 def move_to_a_location(response):
     locations = {
         "utter_start_tour" : "tour_scrum_assistant_p1",
-        "utter_product_backlog" : "tour_scrum_assistant_p2",
-        "utter_sprint_backlog": "tour_scrum_assistant_p2",
-        "utter_scrum_master" : "tour_scrum_assistant_p3",
-        "utter_scrum_board" : "tour_scrum_assistant_p4",
-        "utter_development_team" : "tour_scrum_assistant_p5",
-        "utter_daily_meeting" : "tour_scrum_assistant_p6",
-        "utter_sprint_review" : "tour_scrum_assistant_p6"
+        "utter_move_to_sala_planning" : "tour_scrum_assistant_p2",
+        "utter_move_to_sala_development": "tour_scrum_assistant_p5",
+        "utter_move_to_sala_reuniones" : "tour_scrum_assistant_p6",
+        "utter_move_to_tablero" : "tour_scrum_assistant_p4",
+        "utter_move_to_oficina" : "tour_scrum_assistant_p3",
     }
     if locations.get(response) != None:
         publisher.publish("movement",
@@ -53,7 +51,7 @@ class TourPolicy(Policy):
             **kwargs: Any
     ) -> None:
         super().__init__(featurizer, priority, should_finetune, **kwargs)
-
+        
         self._it = _create_iterator(
             r"info\explanations.json",
             r"info\intents.json"
@@ -102,9 +100,7 @@ class TourPolicy(Policy):
                     self._it.re_explain(), 1.0, domain
                 ))
             # The user wants an explanation of a specific topic.
-            return self._prediction(confidence_scores_for(
-                self._it.get(intent["name"]), 1.0, domain
-            ))
+            return self._prediction(confidence_scores_for(self._it.get(intent["name"], tracker), 1.0, domain))
 
         # If rasa latest action isn't "action_listen", it means the last thing
         # rasa did was send a response, so now we need to listen again so the
@@ -121,4 +117,3 @@ class TourPolicy(Policy):
     @classmethod
     def _metadata_filename(cls) -> Text:
         return "tour_policy.json"
-

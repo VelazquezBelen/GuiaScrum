@@ -1,8 +1,9 @@
 import abc
 from typing import Dict, List
+from tour import explanation
+from rasa.shared.core.events import SlotSet
 
 from tour.explanation import Explanation
-
 
 class Iterator(metaclass=abc.ABCMeta):
     @abc.abstractmethod
@@ -30,29 +31,33 @@ class BasicIterator(Iterator):
         # Position in the defined explain order.
         self._current_pos = 0
         # Last explanation given to the user.
-        self._last_explanation: Explanation = None
-        # Explanations data.
-        self._explanations: Dict[str, Explanation] = {}
-        # Dict {k: v}, where k is a intent name, and v is the corresponding
-        # explanation to give.
+        self._last_explanation = None 
+        # Explanations data (The explanations in the tour, in order).
+        self._explanations = explanations
+        # The intents with their corresponding response.
         self._intents = intents
-        keys = list(self._intents.keys())
-        for i in range(0,len(keys)):
-            self._explanations[keys[i]] = explanations[i]
-            self._explain_order.append(explanations[i])       
 
     def next(self) -> str:
-        if self._current_pos == len(self._explain_order): # The tour ended
+        if self._current_pos == len(self._explanations): # The tour ended
             return 'utter_end_tour'
-        explanation = self._explain_order[self._current_pos]
+        explanation = self._explanations[self._current_pos]
         self._current_pos += 1
         self._last_explanation = explanation
         return explanation.name
 
-    def get(self, intent_name: str) -> str:
-        explanation = self._explanations[intent_name]
-        self._last_explanation = explanation
-        return explanation.name
+    def get(self, intent_name: str, tracker) -> str:
+        explanation = self._intents[intent_name]
+        # If the user asks for an explanation that will be given later in the tour,
+        # i give him a preview.
+        for i in range(self._current_pos, len(self._explanations)):
+            if self._explanations[i].name == explanation:
+                # Set the slot 'tema' with the tema of the actual explanation
+                tracker.update(SlotSet("tema", self._explanations[self._current_pos].tema))
+                return explanation + '_preview'
+        # Otherwise i give him the complete answer.
+        # (No guardo la explicación en last_explanation porque las explicaciones que no están 
+        # en el tour no tienen otra explicación con mas detalle.)      
+        return explanation                                        
 
     def re_explain(self) -> str:
         # Explain with one more level of detail.

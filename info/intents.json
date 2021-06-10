@@ -1,5 +1,4 @@
 {
-  "" : "utter_start_tour",
   "proceso_scrum": "utter_proceso_scrum",
   "product_backlog": "utter_product_backlog",
   "product_owner": "utter_product_owner", 
@@ -15,5 +14,14 @@
   "sprint_review": "utter_sprint_review",
   "increment": "utter_increment",
   "burndown_chart": "utter_burndown_chart",
-  "sprint_retrospective": "utter_sprint_retrospective"
+  "sprint_retrospective": "utter_sprint_retrospective", 
+  "que_es_scrum": "utter_que_es_scrum",
+  "roles": "utter_roles",
+  "scrum_team": "utter_scrum_team",
+  "teoria_scrum": "utter_teoria_scrum",
+  "artefactos": "utter_artefactos",
+  "es_una_metodologia": "utter_metodologia",
+  "eventos": "utter_eventos",
+  "sprint_planning": "utter_sprint_planning",
+  "sprint_grooming": "utter_sprint_grooming"
 }
