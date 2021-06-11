@@ -47,13 +47,18 @@ class BasicIterator(Iterator):
 
     def get(self, intent_name: str, tracker) -> str:
         explanation = self._intents[intent_name]
+        # The user asks for an explanation that is the next explanation in the tour
+        if(self._explanations[self._current_pos].name) == explanation:
+            self.next()
+
         # If the user asks for an explanation that will be given later in the tour,
         # i give him a preview.
-        for i in range(self._current_pos, len(self._explanations)):
+        for i in range(self._current_pos+1, len(self._explanations)):
             if self._explanations[i].name == explanation:
                 # Set the slot 'tema' with the tema of the actual explanation
                 tracker.update(SlotSet("tema", self._explanations[self._current_pos].tema))
                 return explanation + '_preview'
+
         # Otherwise i give him the complete answer.
         # (No guardo la explicación en last_explanation porque las explicaciones que no están 
         # en el tour no tienen otra explicación con mas detalle.)      
