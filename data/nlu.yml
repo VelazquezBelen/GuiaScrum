@@ -176,8 +176,8 @@ nlu:
 
   - intent: user_story
     examples: |
-      - que es son las user stories?
-      - que es son las historias de usuario?
+      - que son las user stories?
+      - que son las historias de usuario?
       - para que son las user stories?
       - para que se hacen las user stories?
       - para que se hacen las historias de usuario?
