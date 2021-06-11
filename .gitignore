@@ -2,6 +2,7 @@
 /.vscode
 /credentials.yml
 /actions/__pycache__
+venv/
 
 # Pycharm config files.
 /.idea
