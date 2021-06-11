@@ -1,4 +1,5 @@
 import json
+import os
 from typing import Any, List, Dict, Text, Optional
 
 from rasa.core.featurizers.tracker_featurizers import TrackerFeaturizer
@@ -53,8 +54,8 @@ class TourPolicy(Policy):
         super().__init__(featurizer, priority, should_finetune, **kwargs)
         
         self._it = _create_iterator(
-            r"info\explanations.json",
-            r"info\intents.json"
+            r"info" + os.path.sep + "explanations.json",
+            r"info" + os.path.sep + "intents.json"
         )
 
     def train(
