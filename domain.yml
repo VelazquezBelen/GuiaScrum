@@ -108,253 +108,253 @@ responses:
 
   utter_proceso_scrum:
     - text: "En nuestro proyecto utilizamos el marco de trabajo Scrum, a continuación vamos a 
-      \nrealizar un recorrido por todas las salas para que puedas ver que actividades se realizan
-      \nen cada una de ellas y que artefactos se usan en cada etapa del proceso.
-      \nPero antes, tenes que saber que en Scrum un proyecto se ejecuta en Sprints.
-      \nCada Sprint tiene que proporcionar un resultado completo, un incremento de producto final 
-      \nque sea susceptible de ser entregado con el mínimo esfuerzo al cliente cuando lo solicite. 
-      \nEl proceso parte de la lista de requisitos priorizada del producto, que 
-      \nactúa como plan del proyecto. En esta lista el Product Owner prioriza los objetivos balanceando 
-      \nel valor que le aportan respecto a su coste y quedan repartidos en iteraciones y entregas."
+      realizar un recorrido por todas las salas para que puedas ver que actividades se realizan
+      en cada una de ellas y que artefactos se usan en cada etapa del proceso.
+      Pero antes, tenes que saber que en Scrum un proyecto se ejecuta en Sprints.
+      Cada Sprint tiene que proporcionar un resultado completo, un incremento de producto final 
+      que sea susceptible de ser entregado con el mínimo esfuerzo al cliente cuando lo solicite. 
+      El proceso parte de la lista de requisitos priorizada del producto, que 
+      actúa como plan del proyecto. En esta lista el Product Owner prioriza los objetivos balanceando 
+      el valor que le aportan respecto a su coste y quedan repartidos en iteraciones y entregas."
 
   utter_proceso_scrum_2:
     - text: "Como mencioné antes, Scrum es un marco de trabajo que se ejecuta en Sprints. Estos son 
-      \nciclos temporales cortos y de duración fija, normalmente duran entre 2 y 4 semanas.
-      \nAl final de cada Sprint se debe obtener un incremento de producto final para ser entregado 
-      \nal cliente cuando lo solicite.El proceso comienza con la planificación del Sprint, durante 
-      \nesta actividad el cliente presenta la lista de requisitos del producto
-      \ny el equipo selecciona los más prioritarios que prevé que podrá completar en la iteración. Además, 
-      \nelabora la lista de tareas necesarias para desarrollar los requisitos seleccionados, que luego 
-      \nse llevan a cado durante la ejecución del Sprint.
-      \nEl último dia de la iteración se realiza la reunión de revisión, en la cual el equipo presenta 
-      \nal cliente los requisitos completados, en forma de incremento de producto, y se realiza una 
-      \nretrospectiva para reflexionar sobre el último Sprint e identificar posibles mejoras
-      \npara el próximo."
+      ciclos temporales cortos y de duración fija, normalmente duran entre 2 y 4 semanas.
+      Al final de cada Sprint se debe obtener un incremento de producto final para ser entregado 
+      al cliente cuando lo solicite.El proceso comienza con la planificación del Sprint, durante 
+      esta actividad el cliente presenta la lista de requisitos del producto
+      y el equipo selecciona los más prioritarios que prevé que podrá completar en la iteración. Además, 
+      elabora la lista de tareas necesarias para desarrollar los requisitos seleccionados, que luego 
+      se llevan a cado durante la ejecución del Sprint.
+      El último dia de la iteración se realiza la reunión de revisión, en la cual el equipo presenta 
+      al cliente los requisitos completados, en forma de incremento de producto, y se realiza una 
+      retrospectiva para reflexionar sobre el último Sprint e identificar posibles mejoras
+      para el próximo."
 
   # ---ProductBacklog---
 
   utter_product_backlog:
     - text: "El Product Backlog es uno de los artefactos que se usan en Scrum, es un
-      \ninventario que contiene cualquier tipo de trabajo que haya que hacer en el producto:
-      \nrequerimientos, casos de uso, tareas y dependencias. Este elemento debe ser gestionado 
-      \nen exclusiva por el Product Owner. "
+      inventario que contiene cualquier tipo de trabajo que haya que hacer en el producto:
+      requerimientos, casos de uso, tareas y dependencias. Este elemento debe ser gestionado 
+      en exclusiva por el Product Owner. "
 
   utter_product_backlog_2:
     - text: "El Product Backlog es básicamente una lista, en cualquier formato,
-      \nque contiene todos los requerimientos que necesitamos implementar en el
-      \nproducto. Es la principal fuente de información sobre el producto en Scrum."
+      que contiene todos los requerimientos que necesitamos implementar en el
+      producto. Es la principal fuente de información sobre el producto en Scrum."
 
   utter_product_backlog_preview:
     - text: "El Product Backlog es un inventario que contiene cualquier tipo de trabajo que haya 
-      \nque hacer en el producto, ese artefacto lo veremos más adelante. Por el momento sigamos con el tema {tema}."
+      que hacer en el producto, ese artefacto lo veremos más adelante. Por el momento sigamos con el tema {tema}."
 
   utter_product_owner:
     - text: "Como ya te mencione el Product Backlog es gestionado por el Product Owner, 
-      \nque es la persona que representa a los stakeholders. A través del Product Backlog, 
-      \ngestiona el flujo de valor del producto. El Product Owner es un perfil con capacidad 
-      \nde visión de negocio, así como habilidades sociales para la entrevista, como puede ser 
-      \nel uso de preguntas abiertas, la empatía y la reformulación. Es un rol que está muy pegado al
-      \nnegocio a través de los clientes o a personas que tienen relación con ellos."
+      que es la persona que representa a los stakeholders. A través del Product Backlog, 
+      gestiona el flujo de valor del producto. El Product Owner es un perfil con capacidad 
+      de visión de negocio, así como habilidades sociales para la entrevista, como puede ser 
+      el uso de preguntas abiertas, la empatía y la reformulación. Es un rol que está muy pegado al
+      negocio a través de los clientes o a personas que tienen relación con ellos."
       
   utter_product_owner_2:
     - text: "El Product Owner representa los stakeholders, estas son las personas que hacen 
-      \nposible el proyecto y para quienes el proyecto producirá el beneficio 
-      \nacordado que justifica su desarrollo, por ejemplo clientes, proveedores, etc. Es un rol que 
-      \nestá muy pegado al negocio a través de los clientes o a personas que tienen relación con ellos, 
-      \ndebe descubrir sus necesidades y buscar soluciones a las mismas. Para ello utiliza el 
-      \nProduct Backlog, donde se detalla qué debe realizarse para cubrir esa necesidad. 
-      \nCada elemento del Product Backlog es un aporte de valor completo para el cliente."
+      posible el proyecto y para quienes el proyecto producirá el beneficio 
+      acordado que justifica su desarrollo, por ejemplo clientes, proveedores, etc. Es un rol que 
+      está muy pegado al negocio a través de los clientes o a personas que tienen relación con ellos, 
+      debe descubrir sus necesidades y buscar soluciones a las mismas. Para ello utiliza el 
+      Product Backlog, donde se detalla qué debe realizarse para cubrir esa necesidad. 
+      Cada elemento del Product Backlog es un aporte de valor completo para el cliente."
 
   utter_product_owner_preview:
     - text: "El Product Owner, representa a los stakeholders. Es el encargado de optimizar y maximizar 
-      \nel valor del producto, siendo la persona encargada de gestionar el flujo de valor del producto a 
-      \ntravés del Product Backlog. Mas adelante vamos a profundizar en ese rol, por el momento 
-      \nsigamos con el tema {tema}."
+      el valor del producto, siendo la persona encargada de gestionar el flujo de valor del producto a 
+      través del Product Backlog. Mas adelante vamos a profundizar en ese rol, por el momento 
+      sigamos con el tema {tema}."
 
   utter_epica:
     - text: "Dentro del Product Backlog, los requerimientos del cliente se traducen a épicas que son 
-      \nun conjunto de trabajo grande que puede dividirse en historias de usuario en función de las 
-      \nnecesidades o solicitudes de los clientes o usuarios finales. Implementar una épica suele 
-      \nllevar dos o más sprints."
+      un conjunto de trabajo grande que puede dividirse en historias de usuario en función de las 
+      necesidades o solicitudes de los clientes o usuarios finales. Implementar una épica suele 
+      llevar dos o más sprints."
 
   utter_epica_2:
     - text: "Una Épica puede visualizarse como una historia de usuario que aún no se ha detallado, 
-      \nes demasiado grande o todavía presenta mucha incertidumbre y, por lo tanto, no se puede 
-      \ntransformar en un incremento del producto. Debe dividirse en User Stories más pequeñas."
+      es demasiado grande o todavía presenta mucha incertidumbre y, por lo tanto, no se puede 
+      transformar en un incremento del producto. Debe dividirse en User Stories más pequeñas."
   
   utter_epica_preview:
     - text: "Una Épica es un conjunto de trabajo grande que puede dividirse en historias de usuario 
-      \nen función de las necesidades o solicitudes de los clientes o usuarios finales. Este elemento 
-      \nlo veremos mas adelante en el tour, por el momento sigamos con el tema {tema}."
+      en función de las necesidades o solicitudes de los clientes o usuarios finales. Este elemento 
+      lo veremos mas adelante en el tour, por el momento sigamos con el tema {tema}."
 
   # ---SprintPlanning---
 
   utter_sprint_planning:
     - text: "En esta sala se lleva a cabo el Sprint Planning, una reunión que se realiza al comienzo de cada
-      \nSprint donde participa el equipo Scrum al completo; sirve para inspeccionar el Product Backlog y que 
-      \nel equipo de desarrollo seleccione los Product Backlog Items en los que va a trabajar durante el 
-      \nsiguiente Sprint. Estos Product Backlog Items son los que compondrán el Sprint Backlog."
+      Sprint donde participa el equipo Scrum al completo; sirve para inspeccionar el Product Backlog y que 
+      el equipo de desarrollo seleccione los Product Backlog Items en los que va a trabajar durante el 
+      siguiente Sprint. Estos Product Backlog Items son los que compondrán el Sprint Backlog."
 
   utter_sprint_planning_2:
     - text: "Durante el Sprint Planning, el Product Owner presenta el Product Backlog actualizado que el equipo 
-      \nde desarrollo se encarga de estimar, además de intentar clarificar aquellos ítems que crea necesarios.
-      \nEste evento se divide en dos partes: en la primera parte de la reunión se trata Qué se va a hacer en el 
-      \nsiguiente Sprint y, en la segunda parte, se discute el Cómo. La primera parte está organizada y liderada 
-      \npor el Product Owner, mientras que de la segunda parte se encarga el Development Team. La única labor del 
-      \nScrum Master es asegurarse de que la reunión existe como parte de Scrum y que se mantiene dentro de las 
-      \nduraciones estimadas. Puede durar hasta 8 horas para Sprints de 4 semanas."
+      de desarrollo se encarga de estimar, además de intentar clarificar aquellos ítems que crea necesarios.
+      Este evento se divide en dos partes: en la primera parte de la reunión se trata Qué se va a hacer en el 
+      siguiente Sprint y, en la segunda parte, se discute el Cómo. La primera parte está organizada y liderada 
+      por el Product Owner, mientras que de la segunda parte se encarga el Development Team. La única labor del 
+      Scrum Master es asegurarse de que la reunión existe como parte de Scrum y que se mantiene dentro de las 
+      duraciones estimadas. Puede durar hasta 8 horas para Sprints de 4 semanas."
 
   utter_sprint_planning_preview:
     - text: "El Sprint Planning es una reunión que se realiza al comienzo de cada Sprint que sirve para inspeccionar 
-      \nel Product Backlog y que el equipo de desarrollo seleccione los Product Backlog Items en los que va a 
-      \ntrabajar durante el siguiente Sprint."
+      el Product Backlog y que el equipo de desarrollo seleccione los Product Backlog Items en los que va a 
+      trabajar durante el siguiente Sprint."
 
   utter_scrum_master:
     - text: "En esta oficina trabaja el Scrum Master que es el responsable de que Scrum sea 
-      \nentendido y bien aplicado dentro de la organización. Tiene dos funciones principales dentro 
-      \ndel marco de trabajo: gestionar el proceso Scrum y ayudar a eliminar impedimentos que 
-      \npuedan afectar a la entrega del producto.
-      \nAdemás, se encarga de las labores de mentoring y formación, coaching y de facilitar reuniones
-      \ny eventos si es necesario. 
-      \nDurante el Sprint Planning se asegura que la reunión exista como parte de Scrum y que se mantenga
-      \ndentro de las duraciones estimadas."
+      entendido y bien aplicado dentro de la organización. Tiene dos funciones principales dentro 
+      del marco de trabajo: gestionar el proceso Scrum y ayudar a eliminar impedimentos que 
+      puedan afectar a la entrega del producto.
+      Además, se encarga de las labores de mentoring y formación, coaching y de facilitar reuniones
+      y eventos si es necesario. 
+      Durante el Sprint Planning se asegura que la reunión exista como parte de Scrum y que se mantenga
+      dentro de las duraciones estimadas."
 
   utter_scrum_master_2:
     - text: "El Scrum Master es básicamente un entrenador y facilitador de equipos Scrum. 
-      \nPara que entiendas que función cumple te voy a explicar sus dos 
-      \nfunciones principales mas detalladamente:
+      Para que entiendas que función cumple te voy a explicar sus dos 
+      funciones principales mas detalladamente:
       \nGestionar el proceso Scrum: el Scrum Master se encarga de gestionar y asegurar que el proceso 
-      \nScrum se lleva a cabo correctamente, así como de facilitar la ejecución del proceso y sus mecánicas.
+      Scrum se lleva a cabo correctamente, así como de facilitar la ejecución del proceso y sus mecánicas.
       \nEliminar impedimentos: esta función del Scrum Master indica la necesidad de ayudar a eliminar 
-      \nprogresiva y constantemente impedimentos que van surgiendo en la organización y que afectan
-      \na su capacidad para entregar valor, así como a la integridad de esta metodología."
+      progresiva y constantemente impedimentos que van surgiendo en la organización y que afectan
+      a su capacidad para entregar valor, así como a la integridad de esta metodología."
 
   utter_scrum_master_preview:
     - text: "El Scrum Master es el responsable de que Scrum sea entendido y bien aplicado dentro de
-      \nla organización. Se encarga de gestionar el proceso Scrum y eliminar impedimentos. Mas adelante 
-      \nte voy a comentar mas sobre este rol, por el momento sigamos con el tema {tema}."
+      la organización. Se encarga de gestionar el proceso Scrum y eliminar impedimentos. Mas adelante 
+      te voy a comentar mas sobre este rol, por el momento sigamos con el tema {tema}."
 
   utter_sprint_backlog:
     - text: "El Sprint Backlog es un artefacto donde podemos visualizar los ítems que el equipo de 
-      \ndesarrollo seleccionó del Product Backlog y se comprometió a realizar durante el desarrollo 
-      \ndel Sprint, por lo tanto este elemento está gestionado por el Development Team. Su propósito 
-      \nes mantener la transparencia dentro del desarrollo, actualizándolo durante toda la iteración 
-      \nespecialmente a través de los daily Scrums."
+      desarrollo seleccionó del Product Backlog y se comprometió a realizar durante el desarrollo 
+      del Sprint, por lo tanto este elemento está gestionado por el Development Team. Su propósito 
+      es mantener la transparencia dentro del desarrollo, actualizándolo durante toda la iteración 
+      especialmente a través de los daily Scrums."
 
   utter_sprint_backlog_2:
     - text: "El Sprint Backlog es el conjunto de tareas seleccionadas del Product Backlog durante 
-      \nel Sprint Planning para el Sprint actual, es decir, las tareas necesarias para realizar un 
-      \nincremento de producto. En este artefacto para cada uno de los requisitos se muestran sus tareas, 
-      \nel esfuerzo pendiente para finalizarlas y la autoasignación inicial que se han hecho los miembros del equipo. 
-      \nTambién permite ver con que tareas el equipo esta teniendo problemas y no puede avanzar para poder tomar 
-      \ndecisiones al respecto. "
+      el Sprint Planning para el Sprint actual, es decir, las tareas necesarias para realizar un 
+      incremento de producto. En este artefacto para cada uno de los requisitos se muestran sus tareas, 
+      el esfuerzo pendiente para finalizarlas y la autoasignación inicial que se han hecho los miembros del equipo. 
+      También permite ver con que tareas el equipo esta teniendo problemas y no puede avanzar para poder tomar 
+      decisiones al respecto. "
 
   utter_sprint_backlog_preview:
     - text: "El Sprint Backlog es el conjunto de tareas seleccionadas del Product Backlog durante 
-      \nel sprint planning para el Sprint actual, es decir, las tareas necesarias para realizar un 
-      \nincremento de producto. Este artefacto lo veremos mas adelante, por el moomento sigamos con el tema {tema}."
+      el sprint planning para el Sprint actual, es decir, las tareas necesarias para realizar un 
+      incremento de producto. Este artefacto lo veremos mas adelante, por el moomento sigamos con el tema {tema}."
 
   utter_disenio_backlog:
     - text: "Para el diseño de este artefacto se siguen lo siguientes pasos:
       \nEn primer lugar, se definen los temas. Estos deben ser generales y cada uno de ellos puede ser
-      \nparte de distintas iniciativas. Luego, se definen las iniciativas u objetivos comunes relacionado
-      \ncon un tema. Puede ser que una misma iniciativa comparta dos temas.
+      parte de distintas iniciativas. Luego, se definen las iniciativas u objetivos comunes relacionado
+      con un tema. Puede ser que una misma iniciativa comparta dos temas.
       \nA continuacion se definen todas las épicas que se requieren para perseguir ese objetivo en común
-      \nque hemos marcado en el tema. Este proceso se realiza en conjunto con los requerimientos de los clientes.
+      que hemos marcado en el tema. Este proceso se realiza en conjunto con los requerimientos de los clientes.
       \nEn cuarto lugar se divide cada épica en historias de usuarios. En este paso, es fundamental la 
-      \ncolaboración del cliente, es necesario ponerse en su lugar para adaptarse a lo que el quiere
-      \nhacer, tal y como él mismo lo solicite.
+      colaboración del cliente, es necesario ponerse en su lugar para adaptarse a lo que el quiere
+      hacer, tal y como él mismo lo solicite.
       \nPor ultimo se dividen a su vez las historias de usuario definidas en el paso anterior en tareas o 
-      \nactividades para ejecutarlas. El equipo de desarrollo seguirá estas tareas, por ejemplo, en un
-      \nScrum Board. Se seleccionan así las tareas del backlog para ese Sprint o iteración."
+      actividades para ejecutarlas. El equipo de desarrollo seguirá estas tareas, por ejemplo, en un
+      Scrum Board. Se seleccionan así las tareas del backlog para ese Sprint o iteración."
     
   utter_disenio_backlog_2:
     - text: "Para que entiendas el proceso para diseñar el backlog, tenes que tener en cuenta que:
       \nEn primer lugar se definen los temas e iniciativas, piensa esto como objetivos a largo plazo con un 
-      \nenfoque más amplio que tendrá un impacto más significativo en el rendimiento de tu empresa. Supongamos
-      \nque deseas entrar en un nuevo mercado, por ejemplo, el mercado de software de gestión de proyectos.
-      \nAsí que entrar en el mercado de software de gestión de proyectos es tu iniciativa ágil/tema de alto nivel. 
-      \nAhora, vamos a desglosar ese objetivo en dos épicas que son:
+      enfoque más amplio que tendrá un impacto más significativo en el rendimiento de tu empresa. Supongamos
+      que deseas entrar en un nuevo mercado, por ejemplo, el mercado de software de gestión de proyectos.
+      Así que entrar en el mercado de software de gestión de proyectos es tu iniciativa ágil/tema de alto nivel. 
+      Ahora, vamos a desglosar ese objetivo en dos épicas que son:
       \nNuevas características: desarrollar nuevas características para la gestión de proyectos Agile.
       \nMejorar nuestras características actuales para que sean adecuadas para los gerentes de proyecto.
       \nPor último, necesitas desglosar la épica en pequeñas solicitudes que irán entrando relativamente rápido 
-      \nen tu flujo de trabajo. 
+      en tu flujo de trabajo. 
       \nVolviendo al ejemplo, vamos a dividir la épica definida en el paso anterior 'Desarrollar nuevas 
-      \ncaracterísticas para la gestión de proyectos Agile' en:
+      características para la gestión de proyectos Agile' en:
       \nHerramientas de investigación PM.
       \nNuevas características diseño/concepto.
       \nDesarrollo de nuevas características.
       \nLa realización de todas estas pequeñas tareas te ayudará a completar la épica. Por otro lado, completar 
-      \nlas iniciativas te ayudará a acercarte un paso más al objetivo del tema/iniciativa."
+      las iniciativas te ayudará a acercarte un paso más al objetivo del tema/iniciativa."
 
   utter_disenio_backlog_preview:
     - text: "Para diseñar el backlog se siguen una serie de pasos que veremos mas adelante, por el momento
-     \nconcentrémonos en el siguiente tema que es {tema}."
+     concentrémonos en el siguiente tema que es {tema}."
 
   utter_user_story:
     - text: "Una historia de usuario es la descripción funcional utilizada en las metodologías ágiles para
-      \nespecificar el desarrollo de una característica. Estas definen lo que se debe construir en el proyecto
-      \nde software, tienen una prioridad asociada definida por el cliente de manera de indicar cuales son las
-      \nmás importantes para el resultado final, serán divididas en tareas y su tiempo será estimado por los
-      \ndesarrolladores."
+      especificar el desarrollo de una característica. Estas definen lo que se debe construir en el proyecto
+      de software, tienen una prioridad asociada definida por el cliente de manera de indicar cuales son las
+      más importantes para el resultado final, serán divididas en tareas y su tiempo será estimado por los
+      desarrolladores."
 
   utter_user_story_2:
     - text: "Las historias de usuario son descripciones cortas y simples de una característica contada desde 
-      \nla perspectiva de la persona que desea la nueva capacidad. Por lo general, siguen una plantilla simple:
+      la perspectiva de la persona que desea la nueva capacidad. Por lo general, siguen una plantilla simple:
       \n\t Como <perfil> quiero <algún objetivo> para que <motivo> 
       \nPor ejemplo, las historias de usuario pueden tener este aspecto: Como gestor, quiero poder comprender 
-      \nel progreso de mis compañeros, para poder informar sobre nuestros éxitos y fallos. Esta estructura 
-      \nno es obligatoria, pero resulta de ayuda para establecer una definición de Done. Cuando ese perfil puede 
-      \nalcanzar su valor deseado, la historia está completa. "
+      el progreso de mis compañeros, para poder informar sobre nuestros éxitos y fallos. Esta estructura 
+      no es obligatoria, pero resulta de ayuda para establecer una definición de Done. Cuando ese perfil puede 
+      alcanzar su valor deseado, la historia está completa. "
 
   utter_user_story_preview:
     - text: "Una historia de usuario es la descripción funcional utilizada en las metodologías ágiles para
-      \nespecificar el desarrollo de una característica. Esto lo veremos mas adelante, ahora sigamos con el tema {tema}."
+      especificar el desarrollo de una característica. Esto lo veremos mas adelante, ahora sigamos con el tema {tema}."
 
   utter_tarea:
     - text: "Las tareas son elementos técnicos necesarios para que una Historia de Usuario se transforme en 
-      \nun incremento del producto."
+      un incremento del producto."
 
   utter_tarea_2:
     - text: "Una tarea no es parte del resultado del proyecto, es más bien el medio para producir el resultado. 
-      \nPor ejemplo en la historia de usuario: Como usuario quiero buscar en las ofertas de trabajo para ver
-      \ncuales me interesan, podemos identificar las siguientes tareas técnicas: 
+      Por ejemplo en la historia de usuario: Como usuario quiero buscar en las ofertas de trabajo para ver
+      cuales me interesan, podemos identificar las siguientes tareas técnicas: 
       \nCrear UI de presentación de resultados.
       \nCrear los métodos de consulta a BBDD para que retornen resultados.
       \nMostrar un mensaje si no se encuentran resultados con los criterios de búsqueda."
 
   utter_tarea_preview:
     - text: "Las tareas son elementos técnicos necesarios para que una Historia de Usuario se transforme en 
-      \nun incremento del producto. Mas adelante veremos este elemento, ahora continuemos con el tema {tema}."
+      un incremento del producto. Mas adelante veremos este elemento, ahora continuemos con el tema {tema}."
 
   # ---SprintDesarrollo---
 
   utter_development_team:
     - text: "En esta sala el Development Team trabaja durante el desarrollo del Sprint en las tareas que se 
-      \nencuentran en el Sprint Backlog que te mostre antes. Este es un equipo multidisciplinar. Son un grupo 
-      \nde personas con las habilidades necesarias para transformar todos los ítems del Product Backlog en 
-      \nincrementos de desarrollo. La responsabilidad es exclusivamente de ellos ya que son los únicos que pueden 
-      \ncrear estos incrementos. Es un equipo estructurado y empoderado dentro de la organización para 
-      \nauto-organizarse y gestionar su propio trabajo. Esto se traduce en un equipo óptimo tanto en eficiencia 
-      \ncomo en productividad."
+      encuentran en el Sprint Backlog que te mostre antes. Este es un equipo multidisciplinar. Son un grupo 
+      de personas con las habilidades necesarias para transformar todos los ítems del Product Backlog en 
+      incrementos de desarrollo. La responsabilidad es exclusivamente de ellos ya que son los únicos que pueden 
+      crear estos incrementos. Es un equipo estructurado y empoderado dentro de la organización para 
+      auto-organizarse y gestionar su propio trabajo. Esto se traduce en un equipo óptimo tanto en eficiencia 
+      como en productividad."
 
   utter_development_team_2:
     - text: "El Development Team es un grupo de personade que trabajan juntas para entregar los incrementos
-      \nde productos requeridos en cada Sprint. Generalmente son entre 5 y 9 miembros. Las habilidades específicas
-      \nque necesitan suelen ser amplias y variarán según el contexto de su trabajo. 
-      \nSin embargo, los Developers siempre son responsables de: Crear un plan para el Sprint, inculcar calidad 
-      \nal adherirse a una Defición de Done, adaptar su plan cada día hacia el Objetivo del Sprint y responsabilizarse
-      \nmutuamente como profesionales."
+      de productos requeridos en cada Sprint. Generalmente son entre 5 y 9 miembros. Las habilidades específicas
+      que necesitan suelen ser amplias y variarán según el contexto de su trabajo. 
+      Sin embargo, los Developers siempre son responsables de: Crear un plan para el Sprint, inculcar calidad 
+      al adherirse a una Defición de Done, adaptar su plan cada día hacia el Objetivo del Sprint y responsabilizarse
+      mutuamente como profesionales."
 
   utter_development_team_preview:
     - text: "El Development Team es un grupo de personade que trabajan juntas para entregar los incrementos
-      \nde productos requeridos en cada Sprint. Este rol lo veremos mas adelante, por el momento sigamos con el tema {tema}."
+      de productos requeridos en cada Sprint. Este rol lo veremos mas adelante, por el momento sigamos con el tema {tema}."
 
   utter_daily_meeting:
     - text: "En esta sala se hacen las Daily Scrum o Daily Meeting, son reuniones diaria de 15 minutos fijos, 
-      \nindependientemente de la duración del Sprint. Su objetivo es evaluar diariamente el progreso y la tendencia
-      \ndel progreso hasta la finalización del Sprint, sincronizando las actividades y creando un plan para las 
-      \npróximas 24 horas."
+      independientemente de la duración del Sprint. Su objetivo es evaluar diariamente el progreso y la tendencia
+      del progreso hasta la finalización del Sprint, sincronizando las actividades y creando un plan para las 
+      próximas 24 horas."
     
   utter_daily_meeting_2:
     - text: "Durante la reunión cada una de las personas del Development Team responden a las siguientes preguntas:
@@ -365,12 +365,12 @@ responses:
 
   utter_daily_meeting_preview:
     - text: "Una Daily Meeting es una reunión de 15 minutos de duración, del equipo de desarrollo scrum, en el que se sincronizan 
-      \nlas actividades que están ocurriendo en el sprint, y la planificación de las actividades de las próximas 24 horas.
-      \nEste evento lo veremos mas adelante, por ahora sigamos con el tema {tema}."
+      las actividades que están ocurriendo en el sprint, y la planificación de las actividades de las próximas 24 horas.
+      Este evento lo veremos mas adelante, por ahora sigamos con el tema {tema}."
 
   utter_scrum_board:
     - text: "El equipo Scrum utiliza este tablero para organizar la gestión del proyecto. Cuenta con columnas que 
-      \nindican el estado de cada tarea y sirve para: 
+      indican el estado de cada tarea y sirve para: 
       \nDividir el proyecto en fases bien definidas.
       \nConocer la efectividad del equipo.
       \nMonitorear el desarrollo de las tareas, de acuerdo con los objetivos de cada iteración.
@@ -379,44 +379,44 @@ responses:
 
   utter_scrum_board_2:
     - text: "El Scrum Board es el tablero que mantenemos en Scrum como soporte visual. En nuestro caso, contamos 
-      \ncon un tablero físico conformado por columnas con las tareas a realizar, las tareas en progreso y las tareas
-      \nfinalizadas. Cada equipo utiliza un color determinado para diferenciarlas." 
+      con un tablero físico conformado por columnas con las tareas a realizar, las tareas en progreso y las tareas
+      finalizadas." 
 
   utter_scrum_board_preview:
     - text: "El Scrum Board es un tablero que sirve para oganizar la gestión del proyecto. Mas adelante te 
-      \nmostraré el tablero que utilizamos en este proyecto, por el momento sigamos con el tema {tema}." 
+      mostraré el tablero que utilizamos en este proyecto, por el momento sigamos con el tema {tema}." 
 
     # ---Sprint.Fin---
 
   utter_sprint_review:
     - text: "En esta sala se lleva a cabo la etapa final del Sprint de inspección y adaptación. Durante el Sprint Review, 
-      \nel Product Owner y el Development Team presentan a los stakeholders el incremento terminado para su inspección 
-      \ny adaptación correspondientes. Se estudia cuál es la situación y se actualiza el Product Backlog con las nuevas 
-      \ncondiciones que puedan afectar al negocio. La duración estimada en el estándar para un Sprint Review es de 8 horas 
-      \npara un Sprint de 4 semanas, aunque habitualmente estas reuniones se ejecutan en un entorno de entre 2 y 3 horas."
+      el Product Owner y el Development Team presentan a los stakeholders el incremento terminado para su inspección 
+      y adaptación correspondientes. Se estudia cuál es la situación y se actualiza el Product Backlog con las nuevas 
+      condiciones que puedan afectar al negocio. La duración estimada en el estándar para un Sprint Review es de 8 horas 
+      para un Sprint de 4 semanas, aunque habitualmente estas reuniones se ejecutan en un entorno de entre 2 y 3 horas."
 
   utter_sprint_review_2:
     - text: "Durante el Sprint Review, se revisará el incremento terminado. Se mostrará el software funcionando en producción y 
-      \nlos stakeholders tendrán la oportunidad de hacer cuantas preguntas estimen oportunas sobre el mismo. El software 
-      \nfuncionando ha sido validado previamente por el product owner, que se ha encargado de trabajar con el equipo 
-      \ndurante el Sprint para asegurarse que cumple con la Definition of Done y, efectivamente, hace que el Sprint Goal sea válido. 
-      \nEl equipo de desarrollo comenta posteriormente qué ha ocurrido durante el Sprint, los impedimentos que se han encontrado, 
-      \nasí como soluciones tomadas y actualizan a los stakeholders con la situación del equipo. Por último, el Product Owner
-      \nactualiza, con la información de negocio recibida en esta reunión, el Product Backlog para el siguiente Sprint."
+      los stakeholders tendrán la oportunidad de hacer cuantas preguntas estimen oportunas sobre el mismo. El software 
+      funcionando ha sido validado previamente por el product owner, que se ha encargado de trabajar con el equipo 
+      durante el Sprint para asegurarse que cumple con la Definition of Done y, efectivamente, hace que el Sprint Goal sea válido. 
+      El equipo de desarrollo comenta posteriormente qué ha ocurrido durante el Sprint, los impedimentos que se han encontrado, 
+      así como soluciones tomadas y actualizan a los stakeholders con la situación del equipo. Por último, el Product Owner
+      actualiza, con la información de negocio recibida en esta reunión, el Product Backlog para el siguiente Sprint."
 
   utter_sprint_review_preview:
     - text: "El Sprint Review es una reunión que se realiza al final el Sprint, en la cual se revisa el incremento terminado.
-      \nEsto lo veremos mas adelante, por el momento sigamos con el tema {tema}."
+      Esto lo veremos mas adelante, por el momento sigamos con el tema {tema}."
 
   utter_increment:
     - text: "Durante la revisión, se utiliza el documento Increment para visualizar el resultado del Sprint, este contiene la suma
-      \nde todos los ítems del Product Backlog completados durante un Sprint y el valor de los incrementos de todos los
-      \nSprints pasados."
+      de todos los ítems del Product Backlog completados durante un Sprint y el valor de los incrementos de todos los
+      Sprints pasados."
 
   utter_increment_2:
     - text: "Un incremento es es la suma de todas las tareas, casos de uso, historias de usuario y cualquier elemento 
-      \nque se haya desarrollado durante el Sprint y que será puesto a disposición del usuario final en forma de software, 
-      \naportando un valor de negocio al producto que se está desarrollando." 
+      que se haya desarrollado durante el Sprint y que será puesto a disposición del usuario final en forma de software, 
+      aportando un valor de negocio al producto que se está desarrollando." 
 
   utter_increment_preview:
     - text: "El Increment es el resultado del Sprint, esto lo veremos cuando lleguemos a la fase final del Sprint, 
@@ -424,108 +424,108 @@ responses:
 
   utter_burndown_chart:
     - text: "Otro elemento que se utiliza en la revisión del Sprint es el Burdown Chart, es un gráfico de trabajo 
-      \npendiente a lo largo del tiempo que muestra la velocidad a la que se están completando los objetivos, requisitos,
-      \no historias de usuarios."
+      pendiente a lo largo del tiempo que muestra la velocidad a la que se están completando los objetivos, requisitos,
+      o historias de usuarios."
 
   utter_burndown_chart_2:
     - text: "Es una representación gráfica del trabajo por hacer en un proyecto en el tiempo. Usualmente el trabajo
-      \nremanente o backlog se muestra en el eje vertical y el tiempo en el eje horizontal. Este diagrama es útil 
-      \npara predecir cuándo se completará todo el trabajo."  
+      remanente o backlog se muestra en el eje vertical y el tiempo en el eje horizontal. Este diagrama es útil 
+      para predecir cuándo se completará todo el trabajo."  
 
   utter_burndown_chart_preview: 
     - text: "El Burndown Chart es una representación gráfica del trabajo por hacer en un proyecto en el tiempo. 
-      \nEsto lo veremos mas adelante, por ahora sigamos con el tema {tema}."    
+      Esto lo veremos mas adelante, por ahora sigamos con el tema {tema}."    
 
   utter_sprint_retrospective:
     - text: "Por último, se hace una retrospectiva, justo después del Sprint Review. El objetivo de la retrospectiva 
-      \nes hacer de reflexión sobre el último Sprint e identificar posibles mejoras para el próximo. 
-      \nLa duración recomendada por Scrum para un Sprint de 4 semanas es de un máximo de 3 horas, aunque 
-      \nhabitualmente se destina entre 1 y 2 horas a este evento."
+      es hacer de reflexión sobre el último Sprint e identificar posibles mejoras para el próximo. 
+      La duración recomendada por Scrum para un Sprint de 4 semanas es de un máximo de 3 horas, aunque 
+      habitualmente se destina entre 1 y 2 horas a este evento."
 
   utter_sprint_retrospective_2:
     - text: "La retropectiva, en otras palabras, es una reunión que se realiza al final del Sprint para inspeccionar 
-      \nel equipo y levantar mejoras que se apliquen en el siguiente Sprint. Un formato común es analizar qué ha ido 
-      \nbien durante el Sprint, qué ha fallado y qué se puede mejorar. Este formato se puede facilitar pidiendo a los 
-      \nmiembros del equipo Scrum que escriban notas para luego agruparlas y votar aquellos ítems más relevantes, 
-      \ndando la oportunidad a todos de hablar y expresar sus inquietudes."
+      el equipo y levantar mejoras que se apliquen en el siguiente Sprint. Un formato común es analizar qué ha ido 
+      bien durante el Sprint, qué ha fallado y qué se puede mejorar. Este formato se puede facilitar pidiendo a los 
+      miembros del equipo Scrum que escriban notas para luego agruparlas y votar aquellos ítems más relevantes, 
+      dando la oportunidad a todos de hablar y expresar sus inquietudes."
   
   utter_sprint_retrospective_preview:
     - text: "La retropectiva, en otras palabras, es una reunión que se realiza al final del Sprint para inspeccionar 
-      \nel equipo y levantar mejoras que se apliquen en el siguiente Sprint. Este evento lo explicaré mas adelante,
-      \npor ahora sigamos con el tema {tema}."
+      el equipo y levantar mejoras que se apliquen en el siguiente Sprint. Este evento lo explicaré mas adelante,
+      por ahora sigamos con el tema {tema}."
 
     # ---Otras respuestas---
 
   utter_que_es_scrum:
     - text: "Scrum es un framework que define un conjunto de eventos, prácticas y roles, y que puede tomarse como conjunto 
-      \nbase para definir el proceso de producción que usará un equipo de trabajo o dentro de un proyecto. 
-      \nCabe aclarar que un framework es un conjunto estandarizado de conceptos, prácticas y criterios para enfocar un tipo 
-      \nde problemática particular que sirve como referencia, para enfrentar y resolver nuevos problemas de índole similar."
+      base para definir el proceso de producción que usará un equipo de trabajo o dentro de un proyecto. 
+      Cabe aclarar que un framework es un conjunto estandarizado de conceptos, prácticas y criterios para enfocar un tipo 
+      de problemática particular que sirve como referencia, para enfrentar y resolver nuevos problemas de índole similar."
 
   utter_roles:
     - text: "Un equipo Scrum suele estar compuesto por grupos de trabajo de entre 3 a 9 miembros del equipo de desarrollo, 
-      \nmás el Scrum Master y el Product Owner. Cada uno de estos roles tiene diferentes responsabilidades: 
+      más el Scrum Master y el Product Owner. Cada uno de estos roles tiene diferentes responsabilidades: 
       \nEl Scrum Master tiene dos funciones principales dentro del marco de trabajo: gestionar el proceso Scrum y ayudar a 
-      \neliminar impedimentos que puedan afectar a la entrega del producto. 
+      eliminar impedimentos que puedan afectar a la entrega del producto. 
       \nEl Product Owner, que representa a los stakeholders. Es el encargado de optimizar y maximizar el valor del producto, 
-      \nsiendo la persona encargada de gestionar el flujo de valor del producto a través del Product Backlog. 
+      siendo la persona encargada de gestionar el flujo de valor del producto a través del Product Backlog. 
       \nEl equipo de desarrollo se encarga de desarrollar el producto, auto-organizándose y auto-gestionándose para conseguir 
-      \nentregar un incremento de software al final del ciclo de desarrollo. 
+      entregar un incremento de software al final del ciclo de desarrollo. 
       \nAdemás existen roles auxiliares en los equipos Scrum que no tienen un rol formal y no se involucran frecuentemente en 
-      \nel proceso Scrum, sin embargo deben ser tomados en cuenta.
+      el proceso Scrum, sin embargo deben ser tomados en cuenta.
       \nStakeholders (Clientes, Proveedores, Vendedores, etc), son las personas que hacen posible el proyecto y para quienes el 
-      \nproyecto producirá el beneficio acordado que justifica su desarrollo. Solo participan directamente durante las revisiones del sprint."
+      proyecto producirá el beneficio acordado que justifica su desarrollo. Solo participan directamente durante las revisiones del sprint."
   
   utter_scrum_team:
     - text: "Un Scrum Team es la unidad fundamental de Scrum es un pequeño equipo de personas. El Scrum Team consta de un Scrum Master, un 
-      \nProduct Owner y Developers. Dentro de un Scrum Team, no hay subequipos ni jerarquías. Es una unidad cohesionada de profesionales 
-      \nenfocados en un objetivo a la vez, el Objetivo del Producto. Los Scrum Teams son multifuncionales, lo que significa que los miembros 
-      \ntienen todas las habilidades necesarias para crear valor en cada Sprint. También se autogestionan, lo que significa que deciden 
-      \ninternamente quién hace qué, cuándo y cómo."
+      Product Owner y Developers. Dentro de un Scrum Team, no hay subequipos ni jerarquías. Es una unidad cohesionada de profesionales 
+      enfocados en un objetivo a la vez, el Objetivo del Producto. Los Scrum Teams son multifuncionales, lo que significa que los miembros 
+      tienen todas las habilidades necesarias para crear valor en cada Sprint. También se autogestionan, lo que significa que deciden 
+      internamente quién hace qué, cuándo y cómo."
 
   utter_teoria_scrum: 
     - text: "Scrum se basa en el empirismo y el pensamiento Lean. El empirismo afirma que el conocimiento proviene de la experiencia 
-      \ny de la toma de decisiones con base en lo observado. El pensamiento Lean reduce el desperdicio y se enfoca en lo esencial. 
-      \nScrum emplea un enfoque iterativo e incremental para optimizar la previsibilidad y controlar el riesgo. Involucra a grupos 
-      \nde personas que colectivamente tienen todas las habilidades y experiencia para hacer el trabajo y compartir o adquirir 
-      \ndichas habilidades según sea necesario.
-      \nCombina cuatro eventos formales para inspección y adaptación dentro de un evento contenedor, el Sprint. Estos eventos funcionan 
-      \nporque implementan los pilares empíricos de Scrum de transparencia, inspección y adaptación."
+      y de la toma de decisiones con base en lo observado. El pensamiento Lean reduce el desperdicio y se enfoca en lo esencial. 
+      Scrum emplea un enfoque iterativo e incremental para optimizar la previsibilidad y controlar el riesgo. Involucra a grupos 
+      de personas que colectivamente tienen todas las habilidades y experiencia para hacer el trabajo y compartir o adquirir 
+      dichas habilidades según sea necesario.
+      Combina cuatro eventos formales para inspección y adaptación dentro de un evento contenedor, el Sprint. Estos eventos funcionan 
+      porque implementan los pilares empíricos de Scrum de transparencia, inspección y adaptación."
 
   utter_metodologia:
     - text: "Una metodología impone una serie de procesos, ceremonias, documentos, estándares, etc. Con un cierto nivel de rigidez. 
-      \nMientras que un framework da una serie de pautas, roles, artefactos, ceremonias, etc que se pueden usar como guía. Por lo tanto, 
-      \nScrum no es una metodología porque simplemente brinda una guía de los pasos a seguir, pero lo que funciona para un equipo no 
-      \nnecesariamente funciona para otro. Es flexible."
+      Mientras que un framework da una serie de pautas, roles, artefactos, ceremonias, etc que se pueden usar como guía. Por lo tanto, 
+      Scrum no es una metodología porque simplemente brinda una guía de los pasos a seguir, pero lo que funciona para un equipo no 
+      necesariamente funciona para otro. Es flexible."
 
   utter_eventos: 
     - text: "Los eventos de Scrum son bloques de tiempo que pre-definen una duración máxima y tienen por finalidad crear regularidad y 
-      \nconsistencia, para evitar la necesidad de reuniones no definidas en Scrum. El desarrollo del producto es realizado en iteraciones 
-      \nsucesivas denominadas Sprint. Cada Sprint debe declarar un objetivo y entregar una pequeña muestra que incremente el valor del producto. 
-      \nDentro de un Sprint se realizan diversos eventos y actividades, tales como:
+      consistencia, para evitar la necesidad de reuniones no definidas en Scrum. El desarrollo del producto es realizado en iteraciones 
+      sucesivas denominadas Sprint. Cada Sprint debe declarar un objetivo y entregar una pequeña muestra que incremente el valor del producto. 
+      Dentro de un Sprint se realizan diversos eventos y actividades, tales como:
       \nSprint Planning: En esta reunión participa todo el Scrum Team. Su propósito es determinar qué es lo que se puede entregar en el incremento 
-      \nresultante del Sprint que comienza, y cómo se hará el trabajo necesario para ello. 
+      resultante del Sprint que comienza, y cómo se hará el trabajo necesario para ello. 
       \nDaily Scrum: Es la reunión diaria fija. Todos los días, el equipo de desarrollo se reúne por un máximo de 15 minutos. Está orientada 
-      \na realizar una inspección y adaptación con un ciclo rápido. 
+      a realizar una inspección y adaptación con un ciclo rápido. 
       \nSprint Review: En esta reunión se revisa todo el trabajo realizado por el Equipo de Desarrollo, y sirve para inspeccionar el incremento. 
       \nLa Retrospectiva de Sprint es una reunión que busca mejorar la forma en que el Scrum Team desempeña su trabajo. En ella se expone todo 
-      \nlo que fue observado en el Sprint, lo que no están funcionando o qué puede ser mejorado en cuanto a personas, relaciones interpersonales, 
-      \nprocesos y herramientas utilizadas."
+      lo que fue observado en el Sprint, lo que no están funcionando o qué puede ser mejorado en cuanto a personas, relaciones interpersonales, 
+      procesos y herramientas utilizadas."
 
   utter_sprint_grooming:
     - text: "El Sprint Grooming o Refinement es el refinamiento del Product Backlog, es una práctica recomendada para asegurar que éste 
-      \nsiempre esté preparado. Esta ceremonia sigue un patrón similar al resto y tiene una agenda fija específica en cada Sprint. Se estima su 
-      \nduración en 2 horas máximo por semana del Sprint. Es responsabilidad del Product Owner agendar, gestionar y dirigir esta reunión. 
-      \nLos participantes de esta reunión son todo el equipo Scrum (Product Owner, Scrum Master y equipo de desarrollo), así como cualquier recurso 
-      \nadicional que considere necesario el PO y que pueda contribuir a aclarar el requerimiento. Es necesario, por tanto, que antes de la reunión 
-      \ntodos conozcan los requerimientos o historias de usuario que van a ser tratados en la misma y sólo asistan aquellos cuya presencia sea estrictamente relevante."
+      siempre esté preparado. Esta ceremonia sigue un patrón similar al resto y tiene una agenda fija específica en cada Sprint. Se estima su 
+      duración en 2 horas máximo por semana del Sprint. Es responsabilidad del Product Owner agendar, gestionar y dirigir esta reunión. 
+      Los participantes de esta reunión son todo el equipo Scrum (Product Owner, Scrum Master y equipo de desarrollo), así como cualquier recurso 
+      adicional que considere necesario el PO y que pueda contribuir a aclarar el requerimiento. Es necesario, por tanto, que antes de la reunión 
+      todos conozcan los requerimientos o historias de usuario que van a ser tratados en la misma y sólo asistan aquellos cuya presencia sea estrictamente relevante."
   
   # utter_sprint_planning:
   #   - text: "El Sprint Planning es una reunión que se realiza al comienzo de cada Sprint donde participa el equipo Scrum al completo; sirve para 
-  #     \ninspeccionar el Product Backlog y que el equipo de desarrollo seleccione los Product Backlog Items en los que va a trabajar durante el 
-  #     \nsiguiente Sprint. Estos Product Backlog Items son los que compondrán el Sprint Backlog. Durante esta reunión, el product owner presenta 
-  #     \nel Product Backlog actualizado que el equipo de desarrollo se encarga de estimar, además de intentar clarificar aquellos ítems que crea necesarios.
-  #     \nEste evento se divide en dos partes: en la primera parte de la reunión se trata Qué se va a hacer en el siguiente Sprint y, en la segunda 
-  #     \nparte, se discute el Cómo. La primera parte está organizada y liderada por el Product Owner, mientras que de la segunda parte se encarga el 
-  #     \nDevelopment Team. La única labor del Scrum Master es asegurarse de que la reunión existe como parte de Scrum y que se mantiene dentro de las 
-  #     \nduraciones estimadas. Puede durar hasta 8 horas para Sprints de 4 semanas."
+  #     inspeccionar el Product Backlog y que el equipo de desarrollo seleccione los Product Backlog Items en los que va a trabajar durante el 
+  #     siguiente Sprint. Estos Product Backlog Items son los que compondrán el Sprint Backlog. Durante esta reunión, el product owner presenta 
+  #     el Product Backlog actualizado que el equipo de desarrollo se encarga de estimar, además de intentar clarificar aquellos ítems que crea necesarios.
+  #     Este evento se divide en dos partes: en la primera parte de la reunión se trata Qué se va a hacer en el siguiente Sprint y, en la segunda 
+  #     parte, se discute el Cómo. La primera parte está organizada y liderada por el Product Owner, mientras que de la segunda parte se encarga el 
+  #     Development Team. La única labor del Scrum Master es asegurarse de que la reunión existe como parte de Scrum y que se mantiene dentro de las 
+  #     duraciones estimadas. Puede durar hasta 8 horas para Sprints de 4 semanas."

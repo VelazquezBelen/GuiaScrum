@@ -14,7 +14,7 @@ from tour import iterator
 from tour.explanation import Explanation
 from tour.event_handling import EventPublisher
 
-publisher = EventPublisher("movimiento")
+publisher = EventPublisher("log_eventos")
 
 def parse_raw_explanation(data: Dict[str, Any]) -> Explanation:
     return Explanation(list(data["name"]))

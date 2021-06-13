@@ -56,7 +56,10 @@ class BasicIterator(Iterator):
         for i in range(self._current_pos+1, len(self._explanations)):
             if self._explanations[i].name == explanation:
                 # Set the slot 'tema' with the tema of the actual explanation
-                tracker.update(SlotSet("tema", self._explanations[self._current_pos].tema))
+                tema = self._explanations[self._current_pos].tema
+                if tema.find("move") != -1:
+                    tema = self._explanations[self._current_pos+1].tema
+                tracker.update(SlotSet("tema", tema))
                 return explanation + '_preview'
 
         # Otherwise i give him the complete answer.
