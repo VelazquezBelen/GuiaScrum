@@ -14,7 +14,7 @@ from tour import iterator
 from tour.explanation import Explanation
 from tour.event_handling import EventPublisher
 
-publisher = EventPublisher("log_eventos")
+publisher = EventPublisher("logistica_test")
 
 def parse_raw_explanation(data: Dict[str, Any]) -> Explanation:
     return Explanation(list(data["name"]))
@@ -37,9 +37,9 @@ def move_to_a_location(response):
         "utter_move_to_oficina" : "tour_scrum_assistant_p3",
     }
     if locations.get(response) != None:
-        publisher.publish("movement",
+        publisher.publish("movement_now",
             {"location" : locations.get(response),
-             "to": "Cristina"})  
+             "to": "Scrum Assistant"})  
 
 
 class TourPolicy(Policy):

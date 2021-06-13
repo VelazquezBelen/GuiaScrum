@@ -1,8 +1,9 @@
 import json
+from pprint import pprint 
 
 from tour.event_handling import EventSubscriber
 
-consumer = EventSubscriber("movimiento")
+consumer = EventSubscriber("logistica_test")
 
 def callback1(ch, method, properties, body):
     evento = json.loads(body)
@@ -15,7 +16,13 @@ def callback1(ch, method, properties, body):
         'tour_scrum_assistant_p6' : 'la sala de reuniones'
     }
     place = switcher.get(evento["location"])
-    print('Evento:' + str(evento) + ' (El bot se mueve hacia ' + place + ')')
+    #print('Evento:' + str(evento) + ' (El bot se mueve hacia ' + place + ')')
+    pprint(ch)
+    pprint(method)
+    pprint(properties)
+    pprint(body)
+    pprint(evento)
+    
 
-consumer.subscribe("movement", callback1)
+consumer.subscribe("movement_now", callback1)
 consumer.start_listening()
