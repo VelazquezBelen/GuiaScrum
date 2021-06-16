@@ -3,6 +3,8 @@
 /credentials.yml
 /actions/__pycache__
 venv/
-
+/tour/__pycache__
+/.idea
+/Docker
 # Pycharm config files.
 /.idea
