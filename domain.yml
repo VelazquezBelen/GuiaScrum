@@ -50,8 +50,8 @@ slots:
     type: text
     initial_value: None
 
-# actions:
-#   - action_greet
+actions:
+  - action_greet
 
 responses:
   # ---Generales---

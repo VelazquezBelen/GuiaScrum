@@ -4,26 +4,34 @@
 # See this guide on how to implement these action:
 # https://rasa.com/docs/rasa/custom-actions
 
-# from typing import Any, Text, Dict, List
+from typing import Any, Text, Dict, List
 
-# from rasa_sdk import Action, Tracker
-# import rasa_sdk
-# from rasa_sdk.executor import CollectingDispatcher
-# from rasa_sdk.events import SlotSet
+from rasa_sdk import Action, Tracker
+import rasa_sdk
+from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.events import SlotSet
 
 
-# class ActionRecorrido2(Action):
+class ActionHolita(Action):
 
-#     def name(self) -> Text:
-#         return "action_greet"
+    def name(self) -> Text:
+        return "action_greet"
 
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
-#         dispatcher.utter_message('action greet')
-#         return []
-
+        dict = {
+        "message": "holita",
+        "sender": "dana",
+        "metadata":{
+                    "timer": "2"
+                }
+        }
+        dispatcher.utter_message(json_message = dict)
+        
+        return []
+        
 # class ActionRecorrido3(Action):
 
 #     def name(self) -> Text:

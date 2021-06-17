@@ -82,7 +82,7 @@ class TourPolicy(Policy):
             # The user starts the conversation.
             if intent["name"] == "greet":
                 move_to_a_location("utter_greet")
-                return self._prediction(confidence_scores_for('utter_greet', 1.0, domain
+                return self._prediction(confidence_scores_for('action_greet', 1.0, domain
                 ))
             if intent["name"] == "goodbye":
                 return self._prediction(confidence_scores_for('utter_goodbye', 1.0, domain
