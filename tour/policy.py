@@ -100,6 +100,16 @@ class TourPolicy(Policy):
                 return self._prediction(confidence_scores_for(
                     self._it.re_explain(), 1.0, domain
                 ))
+            # The user needs an example.
+            if intent["name"] == "ejemplo":
+                return self._prediction(confidence_scores_for(
+                    self._it.get_example(), 1.0, domain
+                ))
+            # The bot did not understand the user.
+            if intent["name"] == "nlu_fallback":
+                return self._prediction(confidence_scores_for(
+                    "utter_default", 1.0, domain
+                ))
             # The user wants an explanation of a specific topic.
             return self._prediction(confidence_scores_for(self._it.get(intent["name"], tracker), 1.0, domain))
 

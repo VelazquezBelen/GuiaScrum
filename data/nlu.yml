@@ -79,11 +79,18 @@ nlu:
       - no entiendo lo que acabas de explicar
       - necesito que me vuelvas a explicar eso
       - por favor me das mas detalles de eso
-      - necesito un ejemplo para entenderlo
-      - necesito un ejemplo
       - no entiendo que hace el equipo de desarrollo
       - no entiendo que hay en el tablero
       - quiero saber mas
+
+  - intent: ejemplo
+    examples: |
+      - necesito un ejemplo para entenderlo
+      - necesito un ejemplo
+      - me das un ejemplo? 
+      - necesito un ejemplo de eso
+      - me das un ejemplo de eso?
+      - me darias un ejemplo?
 
   # ---Introduccion---
 

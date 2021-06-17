@@ -55,7 +55,7 @@ class BasicIterator(Iterator):
         # i give him a preview.
         for i in range(self._current_pos+1, len(self._explanations)):
             if self._explanations[i].name == explanation:
-                # Set the slot 'tema' with the tema of the actual explanation
+                # Set the slot 'tema' with the tema of the next explanation
                 tema = self._explanations[self._current_pos].tema
                 if tema.find("move") != -1:
                     tema = self._explanations[self._current_pos+1].tema
@@ -65,7 +65,7 @@ class BasicIterator(Iterator):
         # Otherwise i give him the complete answer.
         # (No guardo la explicación en last_explanation porque las explicaciones que no están 
         # en el tour no tienen otra explicación con mas detalle.)      
-        return explanation                                        
+        return explanation                                     
 
     def re_explain(self) -> str:
         # Explain with one more level of detail.
@@ -73,3 +73,7 @@ class BasicIterator(Iterator):
 
     def reset_tour(self):
         self._current_pos = 0
+
+    def get_example(self) -> str:
+        # Returns an example of the last explanation.
+        return self._last_explanation.name + '_ejemplo'
