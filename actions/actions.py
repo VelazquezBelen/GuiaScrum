@@ -5,7 +5,7 @@
 # https://rasa.com/docs/rasa/custom-actions
 
 from typing import Any, Text, Dict, List
-
+import random
 from rasa_sdk import Action, Tracker
 import rasa_sdk
 from rasa_sdk.executor import CollectingDispatcher
@@ -22,12 +22,15 @@ class ActionHolita(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         dict = {
-        "message": "holita",
-        "sender": "dana",
+        "message": random.choice(domain["responses"]["utter_greet"])['text'],
+        "sender": "user",
         "metadata":{
-                    "timer": "2"
+                    "timer": True
                 }
         }
+       # print(domain)
+        print("Entro al action Holita")
+        #print(domain["responses"]["utter_greet"])
         dispatcher.utter_message(json_message = dict)
         
         return []
