@@ -25,4 +25,5 @@ def callback1(ch, method, properties, body):
     
 
 consumer.subscribe("movement_now", callback1)
+consumer.subscribe("task", callback1)
 consumer.start_listening()

@@ -30,13 +30,22 @@
     "name": ["utter_move_to_tablero"]
   },
   {
-    "name": ["utter_scrum_board", "utter_scrum_board_2"]
-  },
-  {
     "name": ["utter_development_team", "utter_development_team_2"]
   },
   {
+    "name": ["utter_scrum_board", "utter_scrum_board_2"]
+  },
+  {
+    "name": ["utter_tarea_in_progress"]
+  },
+  {
+    "name": ["utter_tarea_done"]
+  },
+  {
     "name": ["utter_move_to_sala_development"]
+  },
+  {
+    "name": ["utter_sala_development"]
   },
   {
     "name": ["utter_move_to_sala_reuniones"]

@@ -5,7 +5,7 @@ from typing import Any, List, Dict, Text, Optional
 from rasa.core.featurizers.tracker_featurizers import TrackerFeaturizer
 from rasa.core.policies.policy import PolicyPrediction, confidence_scores_for, \
     Policy
-from rasa.shared.core.domain import Domain
+from rasa.shared.core.domain import Domain, State
 from rasa.shared.core.generator import TrackerWithCachedStates
 from rasa.shared.core.trackers import DialogueStateTracker
 from rasa.shared.nlu.interpreter import NaturalLanguageInterpreter
@@ -41,6 +41,17 @@ def move_to_a_location(response):
             {"location" : locations.get(response),
              "to": "Scrum Assistant"})  
 
+def move_tarea(response):
+    state = {
+        "utter_tarea_in_progress" : "IN PROGRESS",
+        "utter_tarea_done" : "TO DO"
+    }
+    if state.get(response) != None:
+        publisher.publish("task",
+        {"to" : "Scrum Assistant", 
+        "action": "change_state", 
+        "new_state": state.get(response), 
+        "id_artefacto": "40"})
 
 class TourPolicy(Policy):
 
@@ -91,6 +102,7 @@ class TourPolicy(Policy):
             if intent["name"] == "affirm":
                 response = self._it.next()
                 move_to_a_location(response)
+                move_tarea(response)
                 if response == 'utter_end_tour': self._it.reset_tour()
                 return self._prediction(confidence_scores_for(
                     response, 1.0, domain

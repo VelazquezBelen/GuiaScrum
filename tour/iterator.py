@@ -60,7 +60,7 @@ class BasicIterator(Iterator):
                 if tema.find("move") != -1:
                     tema = self._explanations[self._current_pos+1].tema
                 tracker.update(SlotSet("tema", tema))
-                return explanation + '_preview'
+                return explanation + "_preview"
 
         # Otherwise i give him the complete answer.
         # (No guardo la explicación en last_explanation porque las explicaciones que no están 
