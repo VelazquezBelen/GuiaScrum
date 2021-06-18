@@ -14,6 +14,8 @@ from tour import iterator
 from tour.explanation import Explanation
 from tour.event_handling import EventPublisher
 
+from rasa.shared.core.events import SlotSet
+
 publisher = EventPublisher("logistica_test")
 
 def parse_raw_explanation(data: Dict[str, Any]) -> Explanation:
@@ -81,27 +83,33 @@ class TourPolicy(Policy):
         if tracker.latest_action_name == "action_listen":
             # The user starts the conversation.
             if intent["name"] == "greet":
+                tracker.update(SlotSet("next_topic", "utter_greet"))
                 move_to_a_location("utter_greet")
-                return self._prediction(confidence_scores_for('action_greet', 1.0, domain
+                return self._prediction(confidence_scores_for('action', 1.0, domain
                 ))
             if intent["name"] == "goodbye":
-                return self._prediction(confidence_scores_for('utter_goodbye', 1.0, domain
+                tracker.update(SlotSet("next_topic", "utter_goodbye"))
+                return self._prediction(confidence_scores_for('action', 1.0, domain
                 ))
             # The user wants to continue with next explanation.
             if intent["name"] == "affirm":
                 response = self._it.next()
+                tracker.update(SlotSet("next_topic", response))
                 move_to_a_location(response)
                 if response == 'utter_end_tour': self._it.reset_tour()
                 return self._prediction(confidence_scores_for(
-                    response, 1.0, domain
+                    'action', 1.0, domain
                 ))
             # The user didn't understand and needs a re explanation.
             if intent["name"] == "no_entiendo" or intent["name"] == "deny":
+                tracker.update(SlotSet("next_topic", self._it.re_explain()))
                 return self._prediction(confidence_scores_for(
-                    self._it.re_explain(), 1.0, domain
+                    'action', 1.0, domain
                 ))
             # The user wants an explanation of a specific topic.
-            return self._prediction(confidence_scores_for(self._it.get(intent["name"], tracker), 1.0, domain))
+            tracker.update(SlotSet("next_topic",self._it.get(intent["name"],tracker)))
+            #confidence_scores_for(self._it.get(intent["name"], tracker)
+            return self._prediction(confidence_scores_for('action', 1.0, domain))
 
         # If rasa latest action isn't "action_listen", it means the last thing
         # rasa did was send a response, so now we need to listen again so the

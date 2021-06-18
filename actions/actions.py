@@ -12,27 +12,30 @@ from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
 
 
-class ActionHolita(Action):
+class ActionScrumBot(Action):
 
     def name(self) -> Text:
-        return "action_greet"
+        return "action"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
+        utter = tracker.get_slot("next_topic")
+        if (utter=="utter_greet" or utter=="utter_goodbye") :
+            timer = False
+        else:
+            timer=True
+       
         dict = {
-        "message": random.choice(domain["responses"]["utter_greet"])['text'],
+        "message": random.choice(domain["responses"][utter])['text'],
         "sender": "user",
         "metadata":{
-                    "timer": True
+                    "timer": timer
                 }
         }
-       # print(domain)
-        print("Entro al action Holita")
-        #print(domain["responses"]["utter_greet"])
-        dispatcher.utter_message(json_message = dict)
         
+        dispatcher.utter_message(json_message = dict)
         return []
         
 # class ActionRecorrido3(Action):
