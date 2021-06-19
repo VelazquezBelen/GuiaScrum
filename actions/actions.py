@@ -11,6 +11,38 @@
 # from rasa_sdk.executor import CollectingDispatcher
 # from rasa_sdk.events import SlotSet
 
+from typing import Any, Text, Dict, List
+import random
+from rasa_sdk import Action, Tracker
+import rasa_sdk
+from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.events import SlotSet
+
+class ActionScrumBot(Action):
+
+    def name(self) -> Text:
+        return "action"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        utter = tracker.get_slot("next_topic")
+        if (utter=="utter_greet" or utter=="utter_goodbye") :
+            timer = False
+        else:
+            timer=True
+       
+        dict = {
+        "message": random.choice(domain["responses"][utter])['text'],
+        "sender": "user",
+        "metadata":{
+                    "timer": timer
+                }
+        }
+        
+        dispatcher.utter_message(json_message = dict)
+        return []
 
 # class ActionRecorrido2(Action):
 

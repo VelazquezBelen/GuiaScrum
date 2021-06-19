@@ -23,7 +23,7 @@ pipeline:
 
 # Configuration for Rasa Core.
 policies:
-  - name: MemoizationPolicy
+  #- name: MemoizationPolicy
   - name: TEDPolicy
     max_history: 5
     epochs: 100

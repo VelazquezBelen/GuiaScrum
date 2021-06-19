@@ -50,9 +50,12 @@ slots:
   tema:
     type: text
     initial_value: None
+  next_topic:
+    type: text
+    initial_value: None 
 
-# actions:
-#   - action_greet
+actions:
+  - action
 
 responses:
   # ---Generales---
