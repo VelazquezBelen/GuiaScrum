@@ -41,7 +41,7 @@ def move_to_a_location(response):
     if locations.get(response) != None:
         publisher.publish("movement_now",
             {"location" : locations.get(response),
-             "to": "Scrum Assistant"})  
+             "recipient": "Scrum Assistant"})  
 
 def move_tarea(response):
     state = {
